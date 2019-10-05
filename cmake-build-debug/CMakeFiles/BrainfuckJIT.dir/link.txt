@@ -1,0 +1,1 @@
+/usr/bin/clang++  -Wall -Wextra -g -O3 -flto -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/BrainfuckJIT.dir/main.cpp.o  -o BrainfuckJIT 
