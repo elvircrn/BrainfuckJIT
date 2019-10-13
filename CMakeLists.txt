@@ -7,9 +7,10 @@ set(CMAKE_CXX_FLAGS "-Wall -Wextra")
 
 
 set(CMAKE_CXX_FLAGS_DEBUG "-g")
+#TODO: Figure out why this code crashes on O1/2/3
 #set(CMAKE_CXX_FLAGS_DEBUG "-g -O3 -flto -fno-inline")
 #set(CMAKE_CXX_FLAGS_DEBUG "-g -O3 -flto")
-#set(CMAKE_CXX_FLAGS_DEBUG "-g -O3")
+#set(CMAKE_CXX_FLAGS_DEBUG "-g -O1")
 
 file(GLOB_RECURSE source_files
         "include/*.h"

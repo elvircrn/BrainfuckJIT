@@ -442,19 +442,11 @@
 			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
 		</Unit>
-		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/asm_jit_compiler2.h">
-			<Option target="STATIC"/>
-			<Option target="BrainfuckJIT"/>
-		</Unit>
-		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/asmjit_compiler.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/asm_jit_compiler.h">
 			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
 		</Unit>
 		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/bfop.h">
-			<Option target="STATIC"/>
-			<Option target="BrainfuckJIT"/>
-		</Unit>
-		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/code_emitter.h">
 			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
 		</Unit>
@@ -463,18 +455,6 @@
 			<Option target="BrainfuckJIT"/>
 		</Unit>
 		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/core.h">
-			<Option target="STATIC"/>
-			<Option target="BrainfuckJIT"/>
-		</Unit>
-		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/jit_compiler.h">
-			<Option target="STATIC"/>
-			<Option target="BrainfuckJIT"/>
-		</Unit>
-		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/jit_program.h">
-			<Option target="STATIC"/>
-			<Option target="BrainfuckJIT"/>
-		</Unit>
-		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/machine.h">
 			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
 		</Unit>
