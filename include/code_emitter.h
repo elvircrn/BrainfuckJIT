@@ -5,8 +5,8 @@
 #include "core.h"
 
 class CodeEmitter {
-	std::vector<u8> code;
 public:
+	std::vector<u8> code;
 	CodeEmitter() = default;
 
 	void emitByte(uint8_t v) {
@@ -34,16 +34,16 @@ public:
 
 	// Replaces the byte at 'offset' with 'v'. Assumes offset < size().
 	void replaceU8(size_t offset, u8 v) {
-		assert(offset < code.size() && "replacement doesn't fit in code");
+//		assert(offset < code.size() && "replacement doesn't fit in code");
 		code[offset] = v;
 	}
 
 	// Replaces the 32-bit word at 'offset' with 'v'. Assumes offset + 3 < size().
 	void replaceU32(size_t offset, u32 v) {
 		replaceU8(offset, v & 0xffu);
-		replaceU8(offset, (v >> 8u) & 0xffu);
-		replaceU8(offset, (v >> 16u) & 0xffu);
-		replaceU8(offset, (v >> 24u) & 0xffu);
+		replaceU8(offset + 1, (v >> 8u) & 0xffu);
+		replaceU8(offset + 2, (v >> 16u) & 0xffu);
+		replaceU8(offset + 3, (v >> 24u) & 0xffu);
 	}
 };
 

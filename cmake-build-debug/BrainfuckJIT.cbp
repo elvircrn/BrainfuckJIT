@@ -4,185 +4,493 @@
 	<Project>
 		<Option title="BrainfuckJIT"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="clang"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
+				<Option working_dir="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
+				<Option working_dir="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
+				<Option working_dir="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BrainfuckJIT">
-				<Option output="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/BrainfuckJIT" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/elvir/CLionProjects/BrainfuckJIT/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 BrainfuckJIT"/>
-					<CompileFile command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="BrainfuckJIT/fast">
-				<Option output="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/BrainfuckJIT" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
-				<Option object_output="./"/>
-				<Option type="1"/>
-				<Option compiler="gcc"/>
-				<Compiler>
-					<Add directory="/Users/elvir/CLionProjects/BrainfuckJIT/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
-					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
-				</Compiler>
-				<MakeCommands>
-					<Build command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 BrainfuckJIT/fast"/>
-					<CompileFile command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="STATIC">
-				<Option output="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/libSTATIC.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
+				<Option output="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/libSTATIC.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/Users/elvir/CLionProjects/BrainfuckJIT/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/include"/>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/backward"/>
+					<Add directory="/usr/include/clang/8.0.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/llvm-8/lib/clang/8.0.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 STATIC"/>
-					<CompileFile command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 STATIC"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="STATIC/fast">
-				<Option output="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/libSTATIC.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
+				<Option output="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/libSTATIC.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
-				<Option compiler="gcc"/>
+				<Option compiler="clang"/>
 				<Compiler>
-					<Add directory="/Users/elvir/CLionProjects/BrainfuckJIT/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/include"/>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/backward"/>
+					<Add directory="/usr/include/clang/8.0.0/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/10.0.1/include"/>
-					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
 					<Add directory="/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/llvm-8/lib/clang/8.0.0/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 STATIC/fast"/>
-					<CompileFile command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/Library/Developer/CommandLineTools/usr/bin/make -j12 -f &quot;/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 STATIC/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BrainfuckJIT">
+				<Option output="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/BrainfuckJIT" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/include"/>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/backward"/>
+					<Add directory="/usr/include/clang/8.0.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/llvm-8/lib/clang/8.0.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 BrainfuckJIT"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BrainfuckJIT/fast">
+				<Option output="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/BrainfuckJIT" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="clang"/>
+				<Compiler>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/include"/>
+					<Add directory="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0"/>
+					<Add directory="/usr/bin/../lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/backward"/>
+					<Add directory="/usr/include/clang/8.0.0/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/usr/lib/llvm-8/lib/clang/8.0.0/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 BrainfuckJIT/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/asmjit/asmjit.h">
-			<Option target="BrainfuckJIT"/>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/arch.cpp">
 			<Option target="STATIC"/>
-		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/asmjit/core.h">
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/asmjit/x86.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/arch.h">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/JitCompiler.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/assembler.cpp">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/bfop.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/assembler.h">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/code_emitter.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/builder.cpp">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/compiler.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/builder.h">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/core.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/callconv.cpp">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/jit_program.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/callconv.h">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/machine.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/codeholder.cpp">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/profiler.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/codeholder.h">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/include/program.h">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/compiler.cpp">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/main.cpp">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/compiler.h">
+			<Option target="STATIC"/>
 			<Option target="BrainfuckJIT"/>
-			<Option target="STATIC"/>
 		</Unit>
-		<Unit filename="/Users/elvir/CLionProjects/BrainfuckJIT/CMakeLists.txt">
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/constpool.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/constpool.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/cpuinfo.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/cpuinfo.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/emitter.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/emitter.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/func.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/func.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/globals.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/globals.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/inst.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/inst.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitallocator.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitallocator.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitruntime.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitruntime.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/logging.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/logging.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/operand.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/operand.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/osutils.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/osutils.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/ralocal.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rapass.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rastack.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/string.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/string.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/support.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/support.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/target.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/target.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/type.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/type.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/virtmem.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/virtmem.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zone.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zone.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonehash.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonehash.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonelist.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonelist.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonestack.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonestack.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonetree.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonetree.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonevector.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonevector.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86assembler.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86assembler.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86builder.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86builder.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86callconv.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86compiler.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86compiler.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86features.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86features.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instapi.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instdb.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instdb.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86internal.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86logging.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86operand.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86operand.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86rapass.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/asm_jit_compiler2.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/asmjit_compiler.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/bfop.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/code_emitter.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/compiler.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/core.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/jit_compiler.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/jit_program.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/machine.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/profiler.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/include/program.h">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/main.cpp">
+			<Option target="STATIC"/>
+			<Option target="BrainfuckJIT"/>
+		</Unit>
+		<Unit filename="/home/elvircrn/CLionProjects/BrainfuckJIT/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -1,4 +1,4 @@
-/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/BrainfuckJIT.dir
-/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/STATIC.dir
+/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/STATIC.dir
+/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/BrainfuckJIT.dir

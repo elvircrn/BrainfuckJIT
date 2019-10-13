@@ -68,6 +68,7 @@ public:
 		return ops;
 	}
 	void optimize(std::vector<BfOp> &ops) {
+	  /*
 		// [>>>]
 		if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 1),
 											BfOp(BfOpKind::INC_PTR, 1),
@@ -108,6 +109,7 @@ public:
 			ops.emplace_back(BfOpKind::LOOP_MOVE_DATA, offset);
 		}
 
+
 		// [->+<]
 		if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 0),
 											BfOp(BfOpKind::DEC_DATA, 1),
@@ -123,7 +125,7 @@ public:
 			}
 			ops.emplace_back(BfOpKind::LOOP_MOVE_DATA, offset);
 		}
-
+*/
 		// [-]
 		if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 1),
 											BfOp(BfOpKind::DEC_DATA, 1),

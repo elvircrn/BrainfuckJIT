@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/elvircrn/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/elvircrn/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/elvir/CLionProjects/BrainfuckJIT
+CMAKE_SOURCE_DIR = /home/elvircrn/CLionProjects/BrainfuckJIT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug
+CMAKE_BINARY_DIR = /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/elvircrn/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/elvircrn/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,19 +111,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BrainfuckJIT
-
-# Build rule for target.
-BrainfuckJIT: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 BrainfuckJIT
-.PHONY : BrainfuckJIT
-
-# fast build rule for target.
-BrainfuckJIT/fast:
-	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/build
-.PHONY : BrainfuckJIT/fast
-
-#=============================================================================
 # Target rules for targets named STATIC
 
 # Build rule for target.
@@ -136,14 +123,1287 @@ STATIC/fast:
 	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/build
 .PHONY : STATIC/fast
 
+#=============================================================================
+# Target rules for targets named BrainfuckJIT
+
+# Build rule for target.
+BrainfuckJIT: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 BrainfuckJIT
+.PHONY : BrainfuckJIT
+
+# fast build rule for target.
+BrainfuckJIT/fast:
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/build
+.PHONY : BrainfuckJIT/fast
+
+asmjit/core/arch.o: asmjit/core/arch.cpp.o
+
+.PHONY : asmjit/core/arch.o
+
+# target to build an object file
+asmjit/core/arch.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/arch.cpp.o
+.PHONY : asmjit/core/arch.cpp.o
+
+asmjit/core/arch.i: asmjit/core/arch.cpp.i
+
+.PHONY : asmjit/core/arch.i
+
+# target to preprocess a source file
+asmjit/core/arch.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/arch.cpp.i
+.PHONY : asmjit/core/arch.cpp.i
+
+asmjit/core/arch.s: asmjit/core/arch.cpp.s
+
+.PHONY : asmjit/core/arch.s
+
+# target to generate assembly for a file
+asmjit/core/arch.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/arch.cpp.s
+.PHONY : asmjit/core/arch.cpp.s
+
+asmjit/core/assembler.o: asmjit/core/assembler.cpp.o
+
+.PHONY : asmjit/core/assembler.o
+
+# target to build an object file
+asmjit/core/assembler.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/assembler.cpp.o
+.PHONY : asmjit/core/assembler.cpp.o
+
+asmjit/core/assembler.i: asmjit/core/assembler.cpp.i
+
+.PHONY : asmjit/core/assembler.i
+
+# target to preprocess a source file
+asmjit/core/assembler.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/assembler.cpp.i
+.PHONY : asmjit/core/assembler.cpp.i
+
+asmjit/core/assembler.s: asmjit/core/assembler.cpp.s
+
+.PHONY : asmjit/core/assembler.s
+
+# target to generate assembly for a file
+asmjit/core/assembler.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/assembler.cpp.s
+.PHONY : asmjit/core/assembler.cpp.s
+
+asmjit/core/builder.o: asmjit/core/builder.cpp.o
+
+.PHONY : asmjit/core/builder.o
+
+# target to build an object file
+asmjit/core/builder.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/builder.cpp.o
+.PHONY : asmjit/core/builder.cpp.o
+
+asmjit/core/builder.i: asmjit/core/builder.cpp.i
+
+.PHONY : asmjit/core/builder.i
+
+# target to preprocess a source file
+asmjit/core/builder.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/builder.cpp.i
+.PHONY : asmjit/core/builder.cpp.i
+
+asmjit/core/builder.s: asmjit/core/builder.cpp.s
+
+.PHONY : asmjit/core/builder.s
+
+# target to generate assembly for a file
+asmjit/core/builder.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/builder.cpp.s
+.PHONY : asmjit/core/builder.cpp.s
+
+asmjit/core/callconv.o: asmjit/core/callconv.cpp.o
+
+.PHONY : asmjit/core/callconv.o
+
+# target to build an object file
+asmjit/core/callconv.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/callconv.cpp.o
+.PHONY : asmjit/core/callconv.cpp.o
+
+asmjit/core/callconv.i: asmjit/core/callconv.cpp.i
+
+.PHONY : asmjit/core/callconv.i
+
+# target to preprocess a source file
+asmjit/core/callconv.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/callconv.cpp.i
+.PHONY : asmjit/core/callconv.cpp.i
+
+asmjit/core/callconv.s: asmjit/core/callconv.cpp.s
+
+.PHONY : asmjit/core/callconv.s
+
+# target to generate assembly for a file
+asmjit/core/callconv.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/callconv.cpp.s
+.PHONY : asmjit/core/callconv.cpp.s
+
+asmjit/core/codeholder.o: asmjit/core/codeholder.cpp.o
+
+.PHONY : asmjit/core/codeholder.o
+
+# target to build an object file
+asmjit/core/codeholder.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/codeholder.cpp.o
+.PHONY : asmjit/core/codeholder.cpp.o
+
+asmjit/core/codeholder.i: asmjit/core/codeholder.cpp.i
+
+.PHONY : asmjit/core/codeholder.i
+
+# target to preprocess a source file
+asmjit/core/codeholder.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/codeholder.cpp.i
+.PHONY : asmjit/core/codeholder.cpp.i
+
+asmjit/core/codeholder.s: asmjit/core/codeholder.cpp.s
+
+.PHONY : asmjit/core/codeholder.s
+
+# target to generate assembly for a file
+asmjit/core/codeholder.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/codeholder.cpp.s
+.PHONY : asmjit/core/codeholder.cpp.s
+
+asmjit/core/compiler.o: asmjit/core/compiler.cpp.o
+
+.PHONY : asmjit/core/compiler.o
+
+# target to build an object file
+asmjit/core/compiler.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/compiler.cpp.o
+.PHONY : asmjit/core/compiler.cpp.o
+
+asmjit/core/compiler.i: asmjit/core/compiler.cpp.i
+
+.PHONY : asmjit/core/compiler.i
+
+# target to preprocess a source file
+asmjit/core/compiler.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/compiler.cpp.i
+.PHONY : asmjit/core/compiler.cpp.i
+
+asmjit/core/compiler.s: asmjit/core/compiler.cpp.s
+
+.PHONY : asmjit/core/compiler.s
+
+# target to generate assembly for a file
+asmjit/core/compiler.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/compiler.cpp.s
+.PHONY : asmjit/core/compiler.cpp.s
+
+asmjit/core/constpool.o: asmjit/core/constpool.cpp.o
+
+.PHONY : asmjit/core/constpool.o
+
+# target to build an object file
+asmjit/core/constpool.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/constpool.cpp.o
+.PHONY : asmjit/core/constpool.cpp.o
+
+asmjit/core/constpool.i: asmjit/core/constpool.cpp.i
+
+.PHONY : asmjit/core/constpool.i
+
+# target to preprocess a source file
+asmjit/core/constpool.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/constpool.cpp.i
+.PHONY : asmjit/core/constpool.cpp.i
+
+asmjit/core/constpool.s: asmjit/core/constpool.cpp.s
+
+.PHONY : asmjit/core/constpool.s
+
+# target to generate assembly for a file
+asmjit/core/constpool.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/constpool.cpp.s
+.PHONY : asmjit/core/constpool.cpp.s
+
+asmjit/core/cpuinfo.o: asmjit/core/cpuinfo.cpp.o
+
+.PHONY : asmjit/core/cpuinfo.o
+
+# target to build an object file
+asmjit/core/cpuinfo.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/cpuinfo.cpp.o
+.PHONY : asmjit/core/cpuinfo.cpp.o
+
+asmjit/core/cpuinfo.i: asmjit/core/cpuinfo.cpp.i
+
+.PHONY : asmjit/core/cpuinfo.i
+
+# target to preprocess a source file
+asmjit/core/cpuinfo.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/cpuinfo.cpp.i
+.PHONY : asmjit/core/cpuinfo.cpp.i
+
+asmjit/core/cpuinfo.s: asmjit/core/cpuinfo.cpp.s
+
+.PHONY : asmjit/core/cpuinfo.s
+
+# target to generate assembly for a file
+asmjit/core/cpuinfo.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/cpuinfo.cpp.s
+.PHONY : asmjit/core/cpuinfo.cpp.s
+
+asmjit/core/emitter.o: asmjit/core/emitter.cpp.o
+
+.PHONY : asmjit/core/emitter.o
+
+# target to build an object file
+asmjit/core/emitter.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/emitter.cpp.o
+.PHONY : asmjit/core/emitter.cpp.o
+
+asmjit/core/emitter.i: asmjit/core/emitter.cpp.i
+
+.PHONY : asmjit/core/emitter.i
+
+# target to preprocess a source file
+asmjit/core/emitter.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/emitter.cpp.i
+.PHONY : asmjit/core/emitter.cpp.i
+
+asmjit/core/emitter.s: asmjit/core/emitter.cpp.s
+
+.PHONY : asmjit/core/emitter.s
+
+# target to generate assembly for a file
+asmjit/core/emitter.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/emitter.cpp.s
+.PHONY : asmjit/core/emitter.cpp.s
+
+asmjit/core/func.o: asmjit/core/func.cpp.o
+
+.PHONY : asmjit/core/func.o
+
+# target to build an object file
+asmjit/core/func.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/func.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/func.cpp.o
+.PHONY : asmjit/core/func.cpp.o
+
+asmjit/core/func.i: asmjit/core/func.cpp.i
+
+.PHONY : asmjit/core/func.i
+
+# target to preprocess a source file
+asmjit/core/func.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/func.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/func.cpp.i
+.PHONY : asmjit/core/func.cpp.i
+
+asmjit/core/func.s: asmjit/core/func.cpp.s
+
+.PHONY : asmjit/core/func.s
+
+# target to generate assembly for a file
+asmjit/core/func.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/func.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/func.cpp.s
+.PHONY : asmjit/core/func.cpp.s
+
+asmjit/core/globals.o: asmjit/core/globals.cpp.o
+
+.PHONY : asmjit/core/globals.o
+
+# target to build an object file
+asmjit/core/globals.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/globals.cpp.o
+.PHONY : asmjit/core/globals.cpp.o
+
+asmjit/core/globals.i: asmjit/core/globals.cpp.i
+
+.PHONY : asmjit/core/globals.i
+
+# target to preprocess a source file
+asmjit/core/globals.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/globals.cpp.i
+.PHONY : asmjit/core/globals.cpp.i
+
+asmjit/core/globals.s: asmjit/core/globals.cpp.s
+
+.PHONY : asmjit/core/globals.s
+
+# target to generate assembly for a file
+asmjit/core/globals.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/globals.cpp.s
+.PHONY : asmjit/core/globals.cpp.s
+
+asmjit/core/inst.o: asmjit/core/inst.cpp.o
+
+.PHONY : asmjit/core/inst.o
+
+# target to build an object file
+asmjit/core/inst.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/inst.cpp.o
+.PHONY : asmjit/core/inst.cpp.o
+
+asmjit/core/inst.i: asmjit/core/inst.cpp.i
+
+.PHONY : asmjit/core/inst.i
+
+# target to preprocess a source file
+asmjit/core/inst.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/inst.cpp.i
+.PHONY : asmjit/core/inst.cpp.i
+
+asmjit/core/inst.s: asmjit/core/inst.cpp.s
+
+.PHONY : asmjit/core/inst.s
+
+# target to generate assembly for a file
+asmjit/core/inst.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/inst.cpp.s
+.PHONY : asmjit/core/inst.cpp.s
+
+asmjit/core/jitallocator.o: asmjit/core/jitallocator.cpp.o
+
+.PHONY : asmjit/core/jitallocator.o
+
+# target to build an object file
+asmjit/core/jitallocator.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/jitallocator.cpp.o
+.PHONY : asmjit/core/jitallocator.cpp.o
+
+asmjit/core/jitallocator.i: asmjit/core/jitallocator.cpp.i
+
+.PHONY : asmjit/core/jitallocator.i
+
+# target to preprocess a source file
+asmjit/core/jitallocator.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/jitallocator.cpp.i
+.PHONY : asmjit/core/jitallocator.cpp.i
+
+asmjit/core/jitallocator.s: asmjit/core/jitallocator.cpp.s
+
+.PHONY : asmjit/core/jitallocator.s
+
+# target to generate assembly for a file
+asmjit/core/jitallocator.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/jitallocator.cpp.s
+.PHONY : asmjit/core/jitallocator.cpp.s
+
+asmjit/core/jitruntime.o: asmjit/core/jitruntime.cpp.o
+
+.PHONY : asmjit/core/jitruntime.o
+
+# target to build an object file
+asmjit/core/jitruntime.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/jitruntime.cpp.o
+.PHONY : asmjit/core/jitruntime.cpp.o
+
+asmjit/core/jitruntime.i: asmjit/core/jitruntime.cpp.i
+
+.PHONY : asmjit/core/jitruntime.i
+
+# target to preprocess a source file
+asmjit/core/jitruntime.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/jitruntime.cpp.i
+.PHONY : asmjit/core/jitruntime.cpp.i
+
+asmjit/core/jitruntime.s: asmjit/core/jitruntime.cpp.s
+
+.PHONY : asmjit/core/jitruntime.s
+
+# target to generate assembly for a file
+asmjit/core/jitruntime.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/jitruntime.cpp.s
+.PHONY : asmjit/core/jitruntime.cpp.s
+
+asmjit/core/logging.o: asmjit/core/logging.cpp.o
+
+.PHONY : asmjit/core/logging.o
+
+# target to build an object file
+asmjit/core/logging.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/logging.cpp.o
+.PHONY : asmjit/core/logging.cpp.o
+
+asmjit/core/logging.i: asmjit/core/logging.cpp.i
+
+.PHONY : asmjit/core/logging.i
+
+# target to preprocess a source file
+asmjit/core/logging.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/logging.cpp.i
+.PHONY : asmjit/core/logging.cpp.i
+
+asmjit/core/logging.s: asmjit/core/logging.cpp.s
+
+.PHONY : asmjit/core/logging.s
+
+# target to generate assembly for a file
+asmjit/core/logging.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/logging.cpp.s
+.PHONY : asmjit/core/logging.cpp.s
+
+asmjit/core/operand.o: asmjit/core/operand.cpp.o
+
+.PHONY : asmjit/core/operand.o
+
+# target to build an object file
+asmjit/core/operand.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/operand.cpp.o
+.PHONY : asmjit/core/operand.cpp.o
+
+asmjit/core/operand.i: asmjit/core/operand.cpp.i
+
+.PHONY : asmjit/core/operand.i
+
+# target to preprocess a source file
+asmjit/core/operand.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/operand.cpp.i
+.PHONY : asmjit/core/operand.cpp.i
+
+asmjit/core/operand.s: asmjit/core/operand.cpp.s
+
+.PHONY : asmjit/core/operand.s
+
+# target to generate assembly for a file
+asmjit/core/operand.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/operand.cpp.s
+.PHONY : asmjit/core/operand.cpp.s
+
+asmjit/core/osutils.o: asmjit/core/osutils.cpp.o
+
+.PHONY : asmjit/core/osutils.o
+
+# target to build an object file
+asmjit/core/osutils.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/osutils.cpp.o
+.PHONY : asmjit/core/osutils.cpp.o
+
+asmjit/core/osutils.i: asmjit/core/osutils.cpp.i
+
+.PHONY : asmjit/core/osutils.i
+
+# target to preprocess a source file
+asmjit/core/osutils.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/osutils.cpp.i
+.PHONY : asmjit/core/osutils.cpp.i
+
+asmjit/core/osutils.s: asmjit/core/osutils.cpp.s
+
+.PHONY : asmjit/core/osutils.s
+
+# target to generate assembly for a file
+asmjit/core/osutils.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/osutils.cpp.s
+.PHONY : asmjit/core/osutils.cpp.s
+
+asmjit/core/ralocal.o: asmjit/core/ralocal.cpp.o
+
+.PHONY : asmjit/core/ralocal.o
+
+# target to build an object file
+asmjit/core/ralocal.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/ralocal.cpp.o
+.PHONY : asmjit/core/ralocal.cpp.o
+
+asmjit/core/ralocal.i: asmjit/core/ralocal.cpp.i
+
+.PHONY : asmjit/core/ralocal.i
+
+# target to preprocess a source file
+asmjit/core/ralocal.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/ralocal.cpp.i
+.PHONY : asmjit/core/ralocal.cpp.i
+
+asmjit/core/ralocal.s: asmjit/core/ralocal.cpp.s
+
+.PHONY : asmjit/core/ralocal.s
+
+# target to generate assembly for a file
+asmjit/core/ralocal.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/ralocal.cpp.s
+.PHONY : asmjit/core/ralocal.cpp.s
+
+asmjit/core/rapass.o: asmjit/core/rapass.cpp.o
+
+.PHONY : asmjit/core/rapass.o
+
+# target to build an object file
+asmjit/core/rapass.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/rapass.cpp.o
+.PHONY : asmjit/core/rapass.cpp.o
+
+asmjit/core/rapass.i: asmjit/core/rapass.cpp.i
+
+.PHONY : asmjit/core/rapass.i
+
+# target to preprocess a source file
+asmjit/core/rapass.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/rapass.cpp.i
+.PHONY : asmjit/core/rapass.cpp.i
+
+asmjit/core/rapass.s: asmjit/core/rapass.cpp.s
+
+.PHONY : asmjit/core/rapass.s
+
+# target to generate assembly for a file
+asmjit/core/rapass.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/rapass.cpp.s
+.PHONY : asmjit/core/rapass.cpp.s
+
+asmjit/core/rastack.o: asmjit/core/rastack.cpp.o
+
+.PHONY : asmjit/core/rastack.o
+
+# target to build an object file
+asmjit/core/rastack.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/rastack.cpp.o
+.PHONY : asmjit/core/rastack.cpp.o
+
+asmjit/core/rastack.i: asmjit/core/rastack.cpp.i
+
+.PHONY : asmjit/core/rastack.i
+
+# target to preprocess a source file
+asmjit/core/rastack.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/rastack.cpp.i
+.PHONY : asmjit/core/rastack.cpp.i
+
+asmjit/core/rastack.s: asmjit/core/rastack.cpp.s
+
+.PHONY : asmjit/core/rastack.s
+
+# target to generate assembly for a file
+asmjit/core/rastack.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/rastack.cpp.s
+.PHONY : asmjit/core/rastack.cpp.s
+
+asmjit/core/string.o: asmjit/core/string.cpp.o
+
+.PHONY : asmjit/core/string.o
+
+# target to build an object file
+asmjit/core/string.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/string.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/string.cpp.o
+.PHONY : asmjit/core/string.cpp.o
+
+asmjit/core/string.i: asmjit/core/string.cpp.i
+
+.PHONY : asmjit/core/string.i
+
+# target to preprocess a source file
+asmjit/core/string.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/string.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/string.cpp.i
+.PHONY : asmjit/core/string.cpp.i
+
+asmjit/core/string.s: asmjit/core/string.cpp.s
+
+.PHONY : asmjit/core/string.s
+
+# target to generate assembly for a file
+asmjit/core/string.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/string.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/string.cpp.s
+.PHONY : asmjit/core/string.cpp.s
+
+asmjit/core/support.o: asmjit/core/support.cpp.o
+
+.PHONY : asmjit/core/support.o
+
+# target to build an object file
+asmjit/core/support.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/support.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/support.cpp.o
+.PHONY : asmjit/core/support.cpp.o
+
+asmjit/core/support.i: asmjit/core/support.cpp.i
+
+.PHONY : asmjit/core/support.i
+
+# target to preprocess a source file
+asmjit/core/support.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/support.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/support.cpp.i
+.PHONY : asmjit/core/support.cpp.i
+
+asmjit/core/support.s: asmjit/core/support.cpp.s
+
+.PHONY : asmjit/core/support.s
+
+# target to generate assembly for a file
+asmjit/core/support.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/support.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/support.cpp.s
+.PHONY : asmjit/core/support.cpp.s
+
+asmjit/core/target.o: asmjit/core/target.cpp.o
+
+.PHONY : asmjit/core/target.o
+
+# target to build an object file
+asmjit/core/target.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/target.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/target.cpp.o
+.PHONY : asmjit/core/target.cpp.o
+
+asmjit/core/target.i: asmjit/core/target.cpp.i
+
+.PHONY : asmjit/core/target.i
+
+# target to preprocess a source file
+asmjit/core/target.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/target.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/target.cpp.i
+.PHONY : asmjit/core/target.cpp.i
+
+asmjit/core/target.s: asmjit/core/target.cpp.s
+
+.PHONY : asmjit/core/target.s
+
+# target to generate assembly for a file
+asmjit/core/target.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/target.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/target.cpp.s
+.PHONY : asmjit/core/target.cpp.s
+
+asmjit/core/type.o: asmjit/core/type.cpp.o
+
+.PHONY : asmjit/core/type.o
+
+# target to build an object file
+asmjit/core/type.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/type.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/type.cpp.o
+.PHONY : asmjit/core/type.cpp.o
+
+asmjit/core/type.i: asmjit/core/type.cpp.i
+
+.PHONY : asmjit/core/type.i
+
+# target to preprocess a source file
+asmjit/core/type.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/type.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/type.cpp.i
+.PHONY : asmjit/core/type.cpp.i
+
+asmjit/core/type.s: asmjit/core/type.cpp.s
+
+.PHONY : asmjit/core/type.s
+
+# target to generate assembly for a file
+asmjit/core/type.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/type.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/type.cpp.s
+.PHONY : asmjit/core/type.cpp.s
+
+asmjit/core/virtmem.o: asmjit/core/virtmem.cpp.o
+
+.PHONY : asmjit/core/virtmem.o
+
+# target to build an object file
+asmjit/core/virtmem.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/virtmem.cpp.o
+.PHONY : asmjit/core/virtmem.cpp.o
+
+asmjit/core/virtmem.i: asmjit/core/virtmem.cpp.i
+
+.PHONY : asmjit/core/virtmem.i
+
+# target to preprocess a source file
+asmjit/core/virtmem.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/virtmem.cpp.i
+.PHONY : asmjit/core/virtmem.cpp.i
+
+asmjit/core/virtmem.s: asmjit/core/virtmem.cpp.s
+
+.PHONY : asmjit/core/virtmem.s
+
+# target to generate assembly for a file
+asmjit/core/virtmem.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/virtmem.cpp.s
+.PHONY : asmjit/core/virtmem.cpp.s
+
+asmjit/core/zone.o: asmjit/core/zone.cpp.o
+
+.PHONY : asmjit/core/zone.o
+
+# target to build an object file
+asmjit/core/zone.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zone.cpp.o
+.PHONY : asmjit/core/zone.cpp.o
+
+asmjit/core/zone.i: asmjit/core/zone.cpp.i
+
+.PHONY : asmjit/core/zone.i
+
+# target to preprocess a source file
+asmjit/core/zone.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zone.cpp.i
+.PHONY : asmjit/core/zone.cpp.i
+
+asmjit/core/zone.s: asmjit/core/zone.cpp.s
+
+.PHONY : asmjit/core/zone.s
+
+# target to generate assembly for a file
+asmjit/core/zone.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zone.cpp.s
+.PHONY : asmjit/core/zone.cpp.s
+
+asmjit/core/zonehash.o: asmjit/core/zonehash.cpp.o
+
+.PHONY : asmjit/core/zonehash.o
+
+# target to build an object file
+asmjit/core/zonehash.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonehash.cpp.o
+.PHONY : asmjit/core/zonehash.cpp.o
+
+asmjit/core/zonehash.i: asmjit/core/zonehash.cpp.i
+
+.PHONY : asmjit/core/zonehash.i
+
+# target to preprocess a source file
+asmjit/core/zonehash.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonehash.cpp.i
+.PHONY : asmjit/core/zonehash.cpp.i
+
+asmjit/core/zonehash.s: asmjit/core/zonehash.cpp.s
+
+.PHONY : asmjit/core/zonehash.s
+
+# target to generate assembly for a file
+asmjit/core/zonehash.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonehash.cpp.s
+.PHONY : asmjit/core/zonehash.cpp.s
+
+asmjit/core/zonelist.o: asmjit/core/zonelist.cpp.o
+
+.PHONY : asmjit/core/zonelist.o
+
+# target to build an object file
+asmjit/core/zonelist.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonelist.cpp.o
+.PHONY : asmjit/core/zonelist.cpp.o
+
+asmjit/core/zonelist.i: asmjit/core/zonelist.cpp.i
+
+.PHONY : asmjit/core/zonelist.i
+
+# target to preprocess a source file
+asmjit/core/zonelist.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonelist.cpp.i
+.PHONY : asmjit/core/zonelist.cpp.i
+
+asmjit/core/zonelist.s: asmjit/core/zonelist.cpp.s
+
+.PHONY : asmjit/core/zonelist.s
+
+# target to generate assembly for a file
+asmjit/core/zonelist.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonelist.cpp.s
+.PHONY : asmjit/core/zonelist.cpp.s
+
+asmjit/core/zonestack.o: asmjit/core/zonestack.cpp.o
+
+.PHONY : asmjit/core/zonestack.o
+
+# target to build an object file
+asmjit/core/zonestack.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonestack.cpp.o
+.PHONY : asmjit/core/zonestack.cpp.o
+
+asmjit/core/zonestack.i: asmjit/core/zonestack.cpp.i
+
+.PHONY : asmjit/core/zonestack.i
+
+# target to preprocess a source file
+asmjit/core/zonestack.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonestack.cpp.i
+.PHONY : asmjit/core/zonestack.cpp.i
+
+asmjit/core/zonestack.s: asmjit/core/zonestack.cpp.s
+
+.PHONY : asmjit/core/zonestack.s
+
+# target to generate assembly for a file
+asmjit/core/zonestack.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonestack.cpp.s
+.PHONY : asmjit/core/zonestack.cpp.s
+
+asmjit/core/zonetree.o: asmjit/core/zonetree.cpp.o
+
+.PHONY : asmjit/core/zonetree.o
+
+# target to build an object file
+asmjit/core/zonetree.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonetree.cpp.o
+.PHONY : asmjit/core/zonetree.cpp.o
+
+asmjit/core/zonetree.i: asmjit/core/zonetree.cpp.i
+
+.PHONY : asmjit/core/zonetree.i
+
+# target to preprocess a source file
+asmjit/core/zonetree.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonetree.cpp.i
+.PHONY : asmjit/core/zonetree.cpp.i
+
+asmjit/core/zonetree.s: asmjit/core/zonetree.cpp.s
+
+.PHONY : asmjit/core/zonetree.s
+
+# target to generate assembly for a file
+asmjit/core/zonetree.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonetree.cpp.s
+.PHONY : asmjit/core/zonetree.cpp.s
+
+asmjit/core/zonevector.o: asmjit/core/zonevector.cpp.o
+
+.PHONY : asmjit/core/zonevector.o
+
+# target to build an object file
+asmjit/core/zonevector.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonevector.cpp.o
+.PHONY : asmjit/core/zonevector.cpp.o
+
+asmjit/core/zonevector.i: asmjit/core/zonevector.cpp.i
+
+.PHONY : asmjit/core/zonevector.i
+
+# target to preprocess a source file
+asmjit/core/zonevector.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonevector.cpp.i
+.PHONY : asmjit/core/zonevector.cpp.i
+
+asmjit/core/zonevector.s: asmjit/core/zonevector.cpp.s
+
+.PHONY : asmjit/core/zonevector.s
+
+# target to generate assembly for a file
+asmjit/core/zonevector.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/core/zonevector.cpp.s
+.PHONY : asmjit/core/zonevector.cpp.s
+
+asmjit/x86/x86assembler.o: asmjit/x86/x86assembler.cpp.o
+
+.PHONY : asmjit/x86/x86assembler.o
+
+# target to build an object file
+asmjit/x86/x86assembler.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86assembler.cpp.o
+.PHONY : asmjit/x86/x86assembler.cpp.o
+
+asmjit/x86/x86assembler.i: asmjit/x86/x86assembler.cpp.i
+
+.PHONY : asmjit/x86/x86assembler.i
+
+# target to preprocess a source file
+asmjit/x86/x86assembler.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86assembler.cpp.i
+.PHONY : asmjit/x86/x86assembler.cpp.i
+
+asmjit/x86/x86assembler.s: asmjit/x86/x86assembler.cpp.s
+
+.PHONY : asmjit/x86/x86assembler.s
+
+# target to generate assembly for a file
+asmjit/x86/x86assembler.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86assembler.cpp.s
+.PHONY : asmjit/x86/x86assembler.cpp.s
+
+asmjit/x86/x86builder.o: asmjit/x86/x86builder.cpp.o
+
+.PHONY : asmjit/x86/x86builder.o
+
+# target to build an object file
+asmjit/x86/x86builder.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86builder.cpp.o
+.PHONY : asmjit/x86/x86builder.cpp.o
+
+asmjit/x86/x86builder.i: asmjit/x86/x86builder.cpp.i
+
+.PHONY : asmjit/x86/x86builder.i
+
+# target to preprocess a source file
+asmjit/x86/x86builder.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86builder.cpp.i
+.PHONY : asmjit/x86/x86builder.cpp.i
+
+asmjit/x86/x86builder.s: asmjit/x86/x86builder.cpp.s
+
+.PHONY : asmjit/x86/x86builder.s
+
+# target to generate assembly for a file
+asmjit/x86/x86builder.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86builder.cpp.s
+.PHONY : asmjit/x86/x86builder.cpp.s
+
+asmjit/x86/x86callconv.o: asmjit/x86/x86callconv.cpp.o
+
+.PHONY : asmjit/x86/x86callconv.o
+
+# target to build an object file
+asmjit/x86/x86callconv.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86callconv.cpp.o
+.PHONY : asmjit/x86/x86callconv.cpp.o
+
+asmjit/x86/x86callconv.i: asmjit/x86/x86callconv.cpp.i
+
+.PHONY : asmjit/x86/x86callconv.i
+
+# target to preprocess a source file
+asmjit/x86/x86callconv.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86callconv.cpp.i
+.PHONY : asmjit/x86/x86callconv.cpp.i
+
+asmjit/x86/x86callconv.s: asmjit/x86/x86callconv.cpp.s
+
+.PHONY : asmjit/x86/x86callconv.s
+
+# target to generate assembly for a file
+asmjit/x86/x86callconv.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86callconv.cpp.s
+.PHONY : asmjit/x86/x86callconv.cpp.s
+
+asmjit/x86/x86compiler.o: asmjit/x86/x86compiler.cpp.o
+
+.PHONY : asmjit/x86/x86compiler.o
+
+# target to build an object file
+asmjit/x86/x86compiler.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86compiler.cpp.o
+.PHONY : asmjit/x86/x86compiler.cpp.o
+
+asmjit/x86/x86compiler.i: asmjit/x86/x86compiler.cpp.i
+
+.PHONY : asmjit/x86/x86compiler.i
+
+# target to preprocess a source file
+asmjit/x86/x86compiler.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86compiler.cpp.i
+.PHONY : asmjit/x86/x86compiler.cpp.i
+
+asmjit/x86/x86compiler.s: asmjit/x86/x86compiler.cpp.s
+
+.PHONY : asmjit/x86/x86compiler.s
+
+# target to generate assembly for a file
+asmjit/x86/x86compiler.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86compiler.cpp.s
+.PHONY : asmjit/x86/x86compiler.cpp.s
+
+asmjit/x86/x86features.o: asmjit/x86/x86features.cpp.o
+
+.PHONY : asmjit/x86/x86features.o
+
+# target to build an object file
+asmjit/x86/x86features.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86features.cpp.o
+.PHONY : asmjit/x86/x86features.cpp.o
+
+asmjit/x86/x86features.i: asmjit/x86/x86features.cpp.i
+
+.PHONY : asmjit/x86/x86features.i
+
+# target to preprocess a source file
+asmjit/x86/x86features.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86features.cpp.i
+.PHONY : asmjit/x86/x86features.cpp.i
+
+asmjit/x86/x86features.s: asmjit/x86/x86features.cpp.s
+
+.PHONY : asmjit/x86/x86features.s
+
+# target to generate assembly for a file
+asmjit/x86/x86features.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86features.cpp.s
+.PHONY : asmjit/x86/x86features.cpp.s
+
+asmjit/x86/x86instapi.o: asmjit/x86/x86instapi.cpp.o
+
+.PHONY : asmjit/x86/x86instapi.o
+
+# target to build an object file
+asmjit/x86/x86instapi.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86instapi.cpp.o
+.PHONY : asmjit/x86/x86instapi.cpp.o
+
+asmjit/x86/x86instapi.i: asmjit/x86/x86instapi.cpp.i
+
+.PHONY : asmjit/x86/x86instapi.i
+
+# target to preprocess a source file
+asmjit/x86/x86instapi.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86instapi.cpp.i
+.PHONY : asmjit/x86/x86instapi.cpp.i
+
+asmjit/x86/x86instapi.s: asmjit/x86/x86instapi.cpp.s
+
+.PHONY : asmjit/x86/x86instapi.s
+
+# target to generate assembly for a file
+asmjit/x86/x86instapi.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86instapi.cpp.s
+.PHONY : asmjit/x86/x86instapi.cpp.s
+
+asmjit/x86/x86instdb.o: asmjit/x86/x86instdb.cpp.o
+
+.PHONY : asmjit/x86/x86instdb.o
+
+# target to build an object file
+asmjit/x86/x86instdb.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86instdb.cpp.o
+.PHONY : asmjit/x86/x86instdb.cpp.o
+
+asmjit/x86/x86instdb.i: asmjit/x86/x86instdb.cpp.i
+
+.PHONY : asmjit/x86/x86instdb.i
+
+# target to preprocess a source file
+asmjit/x86/x86instdb.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86instdb.cpp.i
+.PHONY : asmjit/x86/x86instdb.cpp.i
+
+asmjit/x86/x86instdb.s: asmjit/x86/x86instdb.cpp.s
+
+.PHONY : asmjit/x86/x86instdb.s
+
+# target to generate assembly for a file
+asmjit/x86/x86instdb.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86instdb.cpp.s
+.PHONY : asmjit/x86/x86instdb.cpp.s
+
+asmjit/x86/x86internal.o: asmjit/x86/x86internal.cpp.o
+
+.PHONY : asmjit/x86/x86internal.o
+
+# target to build an object file
+asmjit/x86/x86internal.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86internal.cpp.o
+.PHONY : asmjit/x86/x86internal.cpp.o
+
+asmjit/x86/x86internal.i: asmjit/x86/x86internal.cpp.i
+
+.PHONY : asmjit/x86/x86internal.i
+
+# target to preprocess a source file
+asmjit/x86/x86internal.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86internal.cpp.i
+.PHONY : asmjit/x86/x86internal.cpp.i
+
+asmjit/x86/x86internal.s: asmjit/x86/x86internal.cpp.s
+
+.PHONY : asmjit/x86/x86internal.s
+
+# target to generate assembly for a file
+asmjit/x86/x86internal.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86internal.cpp.s
+.PHONY : asmjit/x86/x86internal.cpp.s
+
+asmjit/x86/x86logging.o: asmjit/x86/x86logging.cpp.o
+
+.PHONY : asmjit/x86/x86logging.o
+
+# target to build an object file
+asmjit/x86/x86logging.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86logging.cpp.o
+.PHONY : asmjit/x86/x86logging.cpp.o
+
+asmjit/x86/x86logging.i: asmjit/x86/x86logging.cpp.i
+
+.PHONY : asmjit/x86/x86logging.i
+
+# target to preprocess a source file
+asmjit/x86/x86logging.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86logging.cpp.i
+.PHONY : asmjit/x86/x86logging.cpp.i
+
+asmjit/x86/x86logging.s: asmjit/x86/x86logging.cpp.s
+
+.PHONY : asmjit/x86/x86logging.s
+
+# target to generate assembly for a file
+asmjit/x86/x86logging.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86logging.cpp.s
+.PHONY : asmjit/x86/x86logging.cpp.s
+
+asmjit/x86/x86operand.o: asmjit/x86/x86operand.cpp.o
+
+.PHONY : asmjit/x86/x86operand.o
+
+# target to build an object file
+asmjit/x86/x86operand.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86operand.cpp.o
+.PHONY : asmjit/x86/x86operand.cpp.o
+
+asmjit/x86/x86operand.i: asmjit/x86/x86operand.cpp.i
+
+.PHONY : asmjit/x86/x86operand.i
+
+# target to preprocess a source file
+asmjit/x86/x86operand.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86operand.cpp.i
+.PHONY : asmjit/x86/x86operand.cpp.i
+
+asmjit/x86/x86operand.s: asmjit/x86/x86operand.cpp.s
+
+.PHONY : asmjit/x86/x86operand.s
+
+# target to generate assembly for a file
+asmjit/x86/x86operand.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86operand.cpp.s
+.PHONY : asmjit/x86/x86operand.cpp.s
+
+asmjit/x86/x86rapass.o: asmjit/x86/x86rapass.cpp.o
+
+.PHONY : asmjit/x86/x86rapass.o
+
+# target to build an object file
+asmjit/x86/x86rapass.cpp.o:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86rapass.cpp.o
+.PHONY : asmjit/x86/x86rapass.cpp.o
+
+asmjit/x86/x86rapass.i: asmjit/x86/x86rapass.cpp.i
+
+.PHONY : asmjit/x86/x86rapass.i
+
+# target to preprocess a source file
+asmjit/x86/x86rapass.cpp.i:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86rapass.cpp.i
+.PHONY : asmjit/x86/x86rapass.cpp.i
+
+asmjit/x86/x86rapass.s: asmjit/x86/x86rapass.cpp.s
+
+.PHONY : asmjit/x86/x86rapass.s
+
+# target to generate assembly for a file
+asmjit/x86/x86rapass.cpp.s:
+	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/asmjit/x86/x86rapass.cpp.s
+.PHONY : asmjit/x86/x86rapass.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/main.cpp.o
 	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -152,8 +1412,8 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/main.cpp.i
 	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -162,8 +1422,8 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/main.cpp.s
 	$(MAKE) -f CMakeFiles/STATIC.dir/build.make CMakeFiles/STATIC.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/BrainfuckJIT.dir/build.make CMakeFiles/BrainfuckJIT.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -174,8 +1434,134 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... BrainfuckJIT"
 	@echo "... STATIC"
+	@echo "... BrainfuckJIT"
+	@echo "... asmjit/core/arch.o"
+	@echo "... asmjit/core/arch.i"
+	@echo "... asmjit/core/arch.s"
+	@echo "... asmjit/core/assembler.o"
+	@echo "... asmjit/core/assembler.i"
+	@echo "... asmjit/core/assembler.s"
+	@echo "... asmjit/core/builder.o"
+	@echo "... asmjit/core/builder.i"
+	@echo "... asmjit/core/builder.s"
+	@echo "... asmjit/core/callconv.o"
+	@echo "... asmjit/core/callconv.i"
+	@echo "... asmjit/core/callconv.s"
+	@echo "... asmjit/core/codeholder.o"
+	@echo "... asmjit/core/codeholder.i"
+	@echo "... asmjit/core/codeholder.s"
+	@echo "... asmjit/core/compiler.o"
+	@echo "... asmjit/core/compiler.i"
+	@echo "... asmjit/core/compiler.s"
+	@echo "... asmjit/core/constpool.o"
+	@echo "... asmjit/core/constpool.i"
+	@echo "... asmjit/core/constpool.s"
+	@echo "... asmjit/core/cpuinfo.o"
+	@echo "... asmjit/core/cpuinfo.i"
+	@echo "... asmjit/core/cpuinfo.s"
+	@echo "... asmjit/core/emitter.o"
+	@echo "... asmjit/core/emitter.i"
+	@echo "... asmjit/core/emitter.s"
+	@echo "... asmjit/core/func.o"
+	@echo "... asmjit/core/func.i"
+	@echo "... asmjit/core/func.s"
+	@echo "... asmjit/core/globals.o"
+	@echo "... asmjit/core/globals.i"
+	@echo "... asmjit/core/globals.s"
+	@echo "... asmjit/core/inst.o"
+	@echo "... asmjit/core/inst.i"
+	@echo "... asmjit/core/inst.s"
+	@echo "... asmjit/core/jitallocator.o"
+	@echo "... asmjit/core/jitallocator.i"
+	@echo "... asmjit/core/jitallocator.s"
+	@echo "... asmjit/core/jitruntime.o"
+	@echo "... asmjit/core/jitruntime.i"
+	@echo "... asmjit/core/jitruntime.s"
+	@echo "... asmjit/core/logging.o"
+	@echo "... asmjit/core/logging.i"
+	@echo "... asmjit/core/logging.s"
+	@echo "... asmjit/core/operand.o"
+	@echo "... asmjit/core/operand.i"
+	@echo "... asmjit/core/operand.s"
+	@echo "... asmjit/core/osutils.o"
+	@echo "... asmjit/core/osutils.i"
+	@echo "... asmjit/core/osutils.s"
+	@echo "... asmjit/core/ralocal.o"
+	@echo "... asmjit/core/ralocal.i"
+	@echo "... asmjit/core/ralocal.s"
+	@echo "... asmjit/core/rapass.o"
+	@echo "... asmjit/core/rapass.i"
+	@echo "... asmjit/core/rapass.s"
+	@echo "... asmjit/core/rastack.o"
+	@echo "... asmjit/core/rastack.i"
+	@echo "... asmjit/core/rastack.s"
+	@echo "... asmjit/core/string.o"
+	@echo "... asmjit/core/string.i"
+	@echo "... asmjit/core/string.s"
+	@echo "... asmjit/core/support.o"
+	@echo "... asmjit/core/support.i"
+	@echo "... asmjit/core/support.s"
+	@echo "... asmjit/core/target.o"
+	@echo "... asmjit/core/target.i"
+	@echo "... asmjit/core/target.s"
+	@echo "... asmjit/core/type.o"
+	@echo "... asmjit/core/type.i"
+	@echo "... asmjit/core/type.s"
+	@echo "... asmjit/core/virtmem.o"
+	@echo "... asmjit/core/virtmem.i"
+	@echo "... asmjit/core/virtmem.s"
+	@echo "... asmjit/core/zone.o"
+	@echo "... asmjit/core/zone.i"
+	@echo "... asmjit/core/zone.s"
+	@echo "... asmjit/core/zonehash.o"
+	@echo "... asmjit/core/zonehash.i"
+	@echo "... asmjit/core/zonehash.s"
+	@echo "... asmjit/core/zonelist.o"
+	@echo "... asmjit/core/zonelist.i"
+	@echo "... asmjit/core/zonelist.s"
+	@echo "... asmjit/core/zonestack.o"
+	@echo "... asmjit/core/zonestack.i"
+	@echo "... asmjit/core/zonestack.s"
+	@echo "... asmjit/core/zonetree.o"
+	@echo "... asmjit/core/zonetree.i"
+	@echo "... asmjit/core/zonetree.s"
+	@echo "... asmjit/core/zonevector.o"
+	@echo "... asmjit/core/zonevector.i"
+	@echo "... asmjit/core/zonevector.s"
+	@echo "... asmjit/x86/x86assembler.o"
+	@echo "... asmjit/x86/x86assembler.i"
+	@echo "... asmjit/x86/x86assembler.s"
+	@echo "... asmjit/x86/x86builder.o"
+	@echo "... asmjit/x86/x86builder.i"
+	@echo "... asmjit/x86/x86builder.s"
+	@echo "... asmjit/x86/x86callconv.o"
+	@echo "... asmjit/x86/x86callconv.i"
+	@echo "... asmjit/x86/x86callconv.s"
+	@echo "... asmjit/x86/x86compiler.o"
+	@echo "... asmjit/x86/x86compiler.i"
+	@echo "... asmjit/x86/x86compiler.s"
+	@echo "... asmjit/x86/x86features.o"
+	@echo "... asmjit/x86/x86features.i"
+	@echo "... asmjit/x86/x86features.s"
+	@echo "... asmjit/x86/x86instapi.o"
+	@echo "... asmjit/x86/x86instapi.i"
+	@echo "... asmjit/x86/x86instapi.s"
+	@echo "... asmjit/x86/x86instdb.o"
+	@echo "... asmjit/x86/x86instdb.i"
+	@echo "... asmjit/x86/x86instdb.s"
+	@echo "... asmjit/x86/x86internal.o"
+	@echo "... asmjit/x86/x86internal.i"
+	@echo "... asmjit/x86/x86internal.s"
+	@echo "... asmjit/x86/x86logging.o"
+	@echo "... asmjit/x86/x86logging.i"
+	@echo "... asmjit/x86/x86logging.s"
+	@echo "... asmjit/x86/x86operand.o"
+	@echo "... asmjit/x86/x86operand.i"
+	@echo "... asmjit/x86/x86operand.s"
+	@echo "... asmjit/x86/x86rapass.o"
+	@echo "... asmjit/x86/x86rapass.i"
+	@echo "... asmjit/x86/x86rapass.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /home/elvircrn/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /home/elvircrn/Desktop/clion-2019.1.4/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/elvir/CLionProjects/BrainfuckJIT
+CMAKE_SOURCE_DIR = /home/elvircrn/CLionProjects/BrainfuckJIT
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug
+CMAKE_BINARY_DIR = /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/STATIC.dir/depend.make
@@ -57,30 +57,660 @@ include CMakeFiles/STATIC.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/STATIC.dir/flags.make
 
+CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.o: ../asmjit/core/arch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/arch.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/arch.cpp > CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/arch.cpp -o CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.o: ../asmjit/core/assembler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/assembler.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/assembler.cpp > CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/assembler.cpp -o CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.o: ../asmjit/core/builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/builder.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/builder.cpp > CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/builder.cpp -o CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.o: ../asmjit/core/callconv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/callconv.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/callconv.cpp > CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/callconv.cpp -o CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.o: ../asmjit/core/codeholder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/codeholder.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/codeholder.cpp > CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/codeholder.cpp -o CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.o: ../asmjit/core/compiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/compiler.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/compiler.cpp > CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/compiler.cpp -o CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.o: ../asmjit/core/constpool.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/constpool.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/constpool.cpp > CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/constpool.cpp -o CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.o: ../asmjit/core/cpuinfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/cpuinfo.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/cpuinfo.cpp > CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/cpuinfo.cpp -o CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.o: ../asmjit/core/emitter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/emitter.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/emitter.cpp > CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/emitter.cpp -o CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/func.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/func.cpp.o: ../asmjit/core/func.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/func.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/func.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/func.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/func.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/func.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/func.cpp > CMakeFiles/STATIC.dir/asmjit/core/func.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/func.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/func.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/func.cpp -o CMakeFiles/STATIC.dir/asmjit/core/func.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.o: ../asmjit/core/globals.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/globals.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/globals.cpp > CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/globals.cpp -o CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.o: ../asmjit/core/inst.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/inst.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/inst.cpp > CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/inst.cpp -o CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.o: ../asmjit/core/jitallocator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitallocator.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitallocator.cpp > CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitallocator.cpp -o CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.o: ../asmjit/core/jitruntime.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitruntime.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitruntime.cpp > CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/jitruntime.cpp -o CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.o: ../asmjit/core/logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/logging.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/logging.cpp > CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/logging.cpp -o CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.o: ../asmjit/core/operand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/operand.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/operand.cpp > CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/operand.cpp -o CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.o: ../asmjit/core/osutils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/osutils.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/osutils.cpp > CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/osutils.cpp -o CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.o: ../asmjit/core/ralocal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/ralocal.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/ralocal.cpp > CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/ralocal.cpp -o CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.o: ../asmjit/core/rapass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rapass.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rapass.cpp > CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rapass.cpp -o CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.o: ../asmjit/core/rastack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rastack.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rastack.cpp > CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/rastack.cpp -o CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/string.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/string.cpp.o: ../asmjit/core/string.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/string.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/string.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/string.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/string.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/string.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/string.cpp > CMakeFiles/STATIC.dir/asmjit/core/string.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/string.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/string.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/string.cpp -o CMakeFiles/STATIC.dir/asmjit/core/string.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/support.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/support.cpp.o: ../asmjit/core/support.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/support.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/support.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/support.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/support.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/support.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/support.cpp > CMakeFiles/STATIC.dir/asmjit/core/support.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/support.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/support.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/support.cpp -o CMakeFiles/STATIC.dir/asmjit/core/support.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/target.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/target.cpp.o: ../asmjit/core/target.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/target.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/target.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/target.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/target.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/target.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/target.cpp > CMakeFiles/STATIC.dir/asmjit/core/target.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/target.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/target.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/target.cpp -o CMakeFiles/STATIC.dir/asmjit/core/target.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/type.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/type.cpp.o: ../asmjit/core/type.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/type.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/type.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/type.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/type.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/type.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/type.cpp > CMakeFiles/STATIC.dir/asmjit/core/type.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/type.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/type.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/type.cpp -o CMakeFiles/STATIC.dir/asmjit/core/type.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.o: ../asmjit/core/virtmem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/virtmem.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/virtmem.cpp > CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/virtmem.cpp -o CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.o: ../asmjit/core/zone.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zone.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zone.cpp > CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zone.cpp -o CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.o: ../asmjit/core/zonehash.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonehash.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonehash.cpp > CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonehash.cpp -o CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.o: ../asmjit/core/zonelist.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonelist.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonelist.cpp > CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonelist.cpp -o CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.o: ../asmjit/core/zonestack.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonestack.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonestack.cpp > CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonestack.cpp -o CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.o: ../asmjit/core/zonetree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonetree.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonetree.cpp > CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonetree.cpp -o CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.o: ../asmjit/core/zonevector.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonevector.cpp
+
+CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonevector.cpp > CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/core/zonevector.cpp -o CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.o: ../asmjit/x86/x86assembler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86assembler.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86assembler.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86assembler.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.o: ../asmjit/x86/x86builder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86builder.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86builder.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86builder.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.o: ../asmjit/x86/x86callconv.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86callconv.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86callconv.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86callconv.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.o: ../asmjit/x86/x86compiler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86compiler.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86compiler.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86compiler.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.o: ../asmjit/x86/x86features.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86features.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86features.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86features.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.o: ../asmjit/x86/x86instapi.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instapi.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instapi.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instapi.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.o: ../asmjit/x86/x86instdb.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instdb.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instdb.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86instdb.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.o: ../asmjit/x86/x86internal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86internal.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86internal.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86internal.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.o: ../asmjit/x86/x86logging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86logging.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86logging.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86logging.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.o: ../asmjit/x86/x86operand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86operand.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86operand.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86operand.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.s
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.o: CMakeFiles/STATIC.dir/flags.make
+CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.o: ../asmjit/x86/x86rapass.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building CXX object CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86rapass.cpp
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86rapass.cpp > CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.i
+
+CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/asmjit/x86/x86rapass.cpp -o CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.s
+
 CMakeFiles/STATIC.dir/main.cpp.o: CMakeFiles/STATIC.dir/flags.make
 CMakeFiles/STATIC.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/STATIC.dir/main.cpp.o"
-	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/main.cpp.o -c /Users/elvir/CLionProjects/BrainfuckJIT/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building CXX object CMakeFiles/STATIC.dir/main.cpp.o"
+	/usr/bin/clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/STATIC.dir/main.cpp.o -c /home/elvircrn/CLionProjects/BrainfuckJIT/main.cpp
 
 CMakeFiles/STATIC.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/STATIC.dir/main.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/elvir/CLionProjects/BrainfuckJIT/main.cpp > CMakeFiles/STATIC.dir/main.cpp.i
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/elvircrn/CLionProjects/BrainfuckJIT/main.cpp > CMakeFiles/STATIC.dir/main.cpp.i
 
 CMakeFiles/STATIC.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/STATIC.dir/main.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/elvir/CLionProjects/BrainfuckJIT/main.cpp -o CMakeFiles/STATIC.dir/main.cpp.s
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/elvircrn/CLionProjects/BrainfuckJIT/main.cpp -o CMakeFiles/STATIC.dir/main.cpp.s
 
 # Object files for target STATIC
 STATIC_OBJECTS = \
+"CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/func.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/string.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/support.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/target.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/type.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.o" \
+"CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.o" \
 "CMakeFiles/STATIC.dir/main.cpp.o"
 
 # External object files for target STATIC
 STATIC_EXTERNAL_OBJECTS =
 
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/arch.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/assembler.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/builder.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/callconv.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/codeholder.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/compiler.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/constpool.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/cpuinfo.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/emitter.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/func.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/globals.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/inst.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/jitallocator.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/jitruntime.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/logging.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/operand.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/osutils.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/ralocal.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/rapass.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/rastack.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/string.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/support.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/target.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/type.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/virtmem.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/zone.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/zonehash.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/zonelist.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/zonestack.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/zonetree.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/core/zonevector.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86assembler.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86builder.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86callconv.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86compiler.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86features.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86instapi.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86instdb.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86internal.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86logging.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86operand.cpp.o
+libSTATIC.a: CMakeFiles/STATIC.dir/asmjit/x86/x86rapass.cpp.o
 libSTATIC.a: CMakeFiles/STATIC.dir/main.cpp.o
 libSTATIC.a: CMakeFiles/STATIC.dir/build.make
 libSTATIC.a: CMakeFiles/STATIC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libSTATIC.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Linking CXX static library libSTATIC.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/STATIC.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/STATIC.dir/link.txt --verbose=$(VERBOSE)
 
@@ -94,6 +724,6 @@ CMakeFiles/STATIC.dir/clean:
 .PHONY : CMakeFiles/STATIC.dir/clean
 
 CMakeFiles/STATIC.dir/depend:
-	cd /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/elvir/CLionProjects/BrainfuckJIT /Users/elvir/CLionProjects/BrainfuckJIT /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug /Users/elvir/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/STATIC.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/elvircrn/CLionProjects/BrainfuckJIT /home/elvircrn/CLionProjects/BrainfuckJIT /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug /home/elvircrn/CLionProjects/BrainfuckJIT/cmake-build-debug/CMakeFiles/STATIC.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/STATIC.dir/depend
 
