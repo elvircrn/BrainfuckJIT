@@ -68,7 +68,7 @@ public:
       if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 1),
                                           BfOp(BfOpKind::INC_PTR, 1),
                                           BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
-                              {true, false, true})) {
+                              {false, false, false})) {
           s64 offset = ops[ops.size() - 2].argument;
           for (size_t i = 0; i < 3; i++) {
               ops.pop_back();
@@ -78,9 +78,9 @@ public:
 
       // [<<<]
       if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 1),
-                                          BfOp(BfOpKind::INC_PTR, 1),
+                                          BfOp(BfOpKind::DEC_PTR, 1),
                                           BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
-                              {true, false, true})) {
+                              {false, false, false})) {
           s64 offset = -ops[ops.size() - 2].argument;
           for (size_t i = 0; i < 3; i++) {
               ops.pop_back();

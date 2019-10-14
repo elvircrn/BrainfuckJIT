@@ -27,7 +27,7 @@ public:
     asmjit::x86::Assembler assm(&code);
     emit(program, assm);
     run(jitRuntime, code);
- }
+  }
 
   void run(asmjit::JitRuntime &jit_runtime, asmjit::CodeHolder &code) {
     asmjit::CodeBuffer &buf = code.sectionById(0)->buffer();
@@ -50,7 +50,7 @@ public:
     assm.mov(dataptr, asmjit::x86::rdi);
     std::stack<std::pair<asmjit::Label, asmjit::Label>> addressStack;
 
-    for (const auto& op : program) {
+    for (const auto &op : program) {
       switch (op.kind) {
       case BfOpKind::INC_PTR:emitIncPtr(assm, dataptr, op);
         break;
@@ -68,9 +68,9 @@ public:
         break;
       case BfOpKind::JUMP_IF_DATA_NOT_ZERO:emitJumpIfDataNotZero(assm, dataptr, addressStack);
         break;
-      case BfOpKind::LOOP_MOVE_DATA:emitLoopMoveData();
+      case BfOpKind::LOOP_MOVE_DATA:emitLoopMoveData(assm);
         break;
-      case BfOpKind::LOOP_MOVE_PTR:emitLoopMovePtr();
+      case BfOpKind::LOOP_MOVE_PTR:emitLoopMovePtr(assm, dataptr, op);
         break;
       default: break;
       }
@@ -79,16 +79,29 @@ public:
     emitFuncReturn(assm);
   }
 
-  inline void emitLoopMoveData() const {
-  }
+  inline void emitLoopMoveData(asmjit::x86::Assembler &assm) {}
 
-  inline void emitLoopMovePtr() {
-
+  inline void emitLoopMovePtr(asmjit::x86::Assembler &assm,
+                              const asmjit::x86::Gp &dataptr,
+                              const BfOp &op) {
+    asmjit::Label startLoop = assm.newLabel();
+    assm.bind(startLoop);
+    assm.cmp(asmjit::x86::byte_ptr(dataptr), 0);
+    asmjit::Label endLoop = assm.newLabel();
+    assm.jz(endLoop);
+    if (op.argument > 0) {
+      assm.adc(asmjit::x86::byte_ptr(dataptr), op.argument);
+    } else if (op.argument < 0) {
+      assm.sub(asmjit::x86::byte_ptr(dataptr), -op.argument);
+    }
+    assm.cmp(asmjit::x86::byte_ptr(dataptr), 0);
+    assm.jnz(startLoop);
+    assm.bind(endLoop);
   }
 
   inline void emitJumpIfDataNotZero(asmjit::x86::Assembler &assm,
-                             const asmjit::x86::Gp &dataptr,
-                             std::stack<std::pair<asmjit::Label, asmjit::Label>> &addressStack) const {
+                                    const asmjit::x86::Gp &dataptr,
+                                    std::stack<std::pair<asmjit::Label, asmjit::Label>> &addressStack) const {
     assm.cmp(asmjit::x86::byte_ptr(dataptr), 0);
     auto top = addressStack.top();
     addressStack.pop();
@@ -97,8 +110,8 @@ public:
   }
 
   inline void emitJumpIfDataZero(asmjit::x86::Assembler &assm,
-                          const asmjit::x86::Gp &dataptr,
-                          std::stack<std::pair<asmjit::Label, asmjit::Label>> &addressStack) const {
+                                 const asmjit::x86::Gp &dataptr,
+                                 std::stack<std::pair<asmjit::Label, asmjit::Label>> &addressStack) const {
     assm.cmp(asmjit::x86::byte_ptr(dataptr), 0);
     asmjit::Label openLabel = assm.newLabel();
     asmjit::Label closeLabel = assm.newLabel();
@@ -108,7 +121,7 @@ public:
   }
 
   inline void emitLoopSetToZero(asmjit::x86::Assembler &assm,
-                         const asmjit::x86::Gp &dataptr) const { assm.mov(asmjit::x86::byte_ptr(dataptr), 0); }
+                                const asmjit::x86::Gp &dataptr) const { assm.mov(asmjit::x86::byte_ptr(dataptr), 0); }
 
   inline void emitWriteStdout(asmjit::x86::Assembler &assm, const asmjit::x86::Gp &dataptr) const {
     assm.sub(asmjit::x86::rsp, 8);
@@ -117,20 +130,20 @@ public:
   }
 
   inline void emitDecData(asmjit::x86::Assembler &assm,
-                   const asmjit::x86::Gp &dataptr,
-                   const BfOp &op) const { assm.sub(asmjit::x86::byte_ptr(dataptr), op.argument); }
+                          const asmjit::x86::Gp &dataptr,
+                          const BfOp &op) const { assm.sub(asmjit::x86::byte_ptr(dataptr), op.argument); }
 
   inline void emitIncData(asmjit::x86::Assembler &assm,
-                   const asmjit::x86::Gp &dataptr,
-                   const BfOp &op) const { assm.adc(asmjit::x86::byte_ptr(dataptr), op.argument); }
+                          const asmjit::x86::Gp &dataptr,
+                          const BfOp &op) const { assm.adc(asmjit::x86::byte_ptr(dataptr), op.argument); }
 
   inline void emitDecPtr(asmjit::x86::Assembler &assm,
-                  const asmjit::x86::Gp &dataptr,
-                  const BfOp &op) const { assm.sub(dataptr, op.argument); }
+                         const asmjit::x86::Gp &dataptr,
+                         const BfOp &op) const { assm.sub(dataptr, op.argument); }
 
   inline void emitIncPtr(asmjit::x86::Assembler &assm,
-                  const asmjit::x86::Gp &dataptr,
-                  const BfOp &op) const { assm.adc(dataptr, op.argument); }
+                         const asmjit::x86::Gp &dataptr,
+                         const BfOp &op) const { assm.adc(dataptr, op.argument); }
 };
 }
 
