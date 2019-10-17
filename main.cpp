@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
     std::string programPath = argv[1];
 	Program program = Program::load(programPath);
 	Compiler compiler{};
-	const std::vector<BfOp> &compiled = compiler.compile(program);
+	const std::vector<BfOp> &compiled = compiler.compile(program, 2);
 	jit::BrainfuckJITRuntime brainfuckJITRuntime{};
 	BEGIN_PROFILER
 	brainfuckJITRuntime.emitAndCall(compiled);

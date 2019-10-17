@@ -14,10 +14,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a96d5c5f-292f-4eba-903b-12ba9bb37589" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/BrainfuckJIT" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/BrainfuckJIT" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BrainfuckJIT.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/BrainfuckJIT.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/asm_jit_compiler.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/asm_jit_compiler.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/compiler.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/compiler.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +60,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../asmjit" />
+    <property name="last_opened_file_path" value="/tmp/bjoutO4.id1" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -112,7 +114,7 @@
       <updated>1570220540887</updated>
       <workItem from="1570220542288" duration="8883000" />
       <workItem from="1570276917450" duration="45892000" />
-      <workItem from="1570957368845" duration="22663000" />
+      <workItem from="1570957368845" duration="33536000" />
     </task>
     <servers />
   </component>
@@ -131,5 +133,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/asm_jit_compiler.h</url>
+          <line>64</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

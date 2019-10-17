@@ -33,6 +33,32 @@ public:
     asmjit::CodeBuffer &buf = code.sectionById(0)->buffer();
     std::vector<uint8_t> emitted_code(buf.size());
     memcpy(emitted_code.data(), buf.data(), buf.size());
+      const char* filename = "/tmp/bjoutO5.bin";
+    FILE* outfile = fopen(filename, "wb");
+    if (outfile) {
+      size_t n = emitted_code.size();
+      if (fwrite(emitted_code.data(), 1, n, outfile) == n) {
+        std::cout << "* emitted code to " << filename << "\n";
+      }
+      fclose(outfile);
+    }
+
+    std::cout << "* Memory nonzero locations:\n";
+
+    for (size_t i = 0, pcount = 0; i < tape.size(); ++i) {
+      if (tape[i]) {
+        std::cout << std::right << "[" << std::setw(3) << i
+                  << "] = " << std::setw(3) << std::left
+                  << static_cast<int32_t>(tape[i]) << "      ";
+        pcount++;
+
+        if (pcount > 0 && pcount % 4 == 0) {
+          std::cout << "\n";
+        }
+      }
+    }
+    std::cout << "\n";
+
     using JittedFunc = void (*)(u64);
     JittedFunc func;
     jit_runtime.add(&func, &code);
@@ -85,26 +111,24 @@ public:
                               const asmjit::x86::Gp &dataptr,
                               const BfOp &op) {
     asmjit::Label startLoop = assm.newLabel();
+    asmjit::Label endLoop = assm.newLabel();
     assm.bind(startLoop);
     assm.cmp(asmjit::x86::byte_ptr(dataptr), 0);
-    asmjit::Label endLoop = assm.newLabel();
     assm.jz(endLoop);
     if (op.argument > 0) {
       assm.adc(asmjit::x86::byte_ptr(dataptr), op.argument);
     } else if (op.argument < 0) {
       assm.sub(asmjit::x86::byte_ptr(dataptr), -op.argument);
     }
-    assm.cmp(asmjit::x86::byte_ptr(dataptr), 0);
-    assm.jnz(startLoop);
+    assm.jmp(startLoop);
     assm.bind(endLoop);
   }
 
   inline void emitJumpIfDataNotZero(asmjit::x86::Assembler &assm,
                                     const asmjit::x86::Gp &dataptr,
                                     std::stack<std::pair<asmjit::Label, asmjit::Label>> &addressStack) const {
+    auto top = addressStack.top(); addressStack.pop();
     assm.cmp(asmjit::x86::byte_ptr(dataptr), 0);
-    auto top = addressStack.top();
-    addressStack.pop();
     assm.jnz(top.first);
     assm.bind(top.second);
   }

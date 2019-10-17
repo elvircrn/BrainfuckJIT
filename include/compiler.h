@@ -21,7 +21,7 @@ class Compiler {
   }
 
 public:
-  std::vector<BfOp> compile(const Program &program) {
+  std::vector<BfOp> compile(const Program &program, size_t level) {
     std::vector<BfOp> ops;
 
     BfOp currentOp{BfOpKind::INVALID_OP, 0};
@@ -29,8 +29,10 @@ public:
     char prev{};
     s64 argument{};
     std::stack<u64> s;
+
+    u64 id{};
     for (const auto &c : program.program) {
-      if (prev && c != prev) {
+      if ((id++) == program.program.size() - 1 || (prev && c != prev)) {
         if (prev == '<') {
           ops.emplace_back(BfOpKind::DEC_PTR, argument);
         } else if (prev == '>') {
@@ -54,7 +56,7 @@ public:
         ops[s.top()].argument = ops.size();
         ops.emplace_back(BfOpKind::JUMP_IF_DATA_NOT_ZERO, s.top());
         s.pop();
-        optimize(ops);
+        optimize(ops, level);
       }
 
       prev = c;
@@ -63,64 +65,66 @@ public:
 
     return ops;
   }
-  void optimize(std::vector<BfOp> &ops) {
+  void optimize(std::vector<BfOp> &ops, size_t level) {
+    if (level > 1) {
       // [>>>]
       if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 1),
-                                          BfOp(BfOpKind::INC_PTR, 1),
-                                          BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
-                              {false, false, false})) {
-          s64 offset = ops[ops.size() - 2].argument;
-          for (size_t i = 0; i < 3; i++) {
-              ops.pop_back();
-          }
-          ops.emplace_back(BfOpKind::LOOP_MOVE_PTR, offset);
+                        BfOp(BfOpKind::INC_PTR, 1),
+                        BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
+                  {false, false, false})) {
+        s64 offset = ops[ops.size() - 2].argument;
+        for (size_t i = 0; i < 3; i++) {
+          ops.pop_back();
+        }
+        ops.emplace_back(BfOpKind::LOOP_MOVE_PTR, offset);
       }
 
       // [<<<]
       if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 1),
-                                          BfOp(BfOpKind::DEC_PTR, 1),
-                                          BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
-                              {false, false, false})) {
-          s64 offset = -ops[ops.size() - 2].argument;
-          for (size_t i = 0; i < 3; i++) {
-              ops.pop_back();
-          }
-          ops.emplace_back(BfOpKind::LOOP_MOVE_PTR, offset);
+                        BfOp(BfOpKind::DEC_PTR, 1),
+                        BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
+                  {false, false, false})) {
+        s64 offset = -ops[ops.size() - 2].argument;
+        for (size_t i = 0; i < 3; i++) {
+          ops.pop_back();
+        }
+        ops.emplace_back(BfOpKind::LOOP_MOVE_PTR, offset);
       }
+    }
 
-      /*
-      // [-<+>]
-      if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 0),
-                                          BfOp(BfOpKind::DEC_DATA, 1),
-                                          BfOp(BfOpKind::DEC_PTR, 0),
-                                          BfOp(BfOpKind::INC_DATA, 1),
-                                          BfOp(BfOpKind::INC_PTR, 1),
-                                          BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
-                              {false, true, false, true, false, false}) &&
-              ops[ops.size() - 2].argument == ops[ops.size() - 4].argument) {
-          s64 offset = -ops[ops.size() - 2].argument;
-          for (size_t i = 0; i < 6; i++) {
-              ops.pop_back();
-          }
-          ops.emplace_back(BfOpKind::LOOP_MOVE_DATA, offset);
-      }
+    /*
+    // [-<+>]
+    if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 0),
+                                        BfOp(BfOpKind::DEC_DATA, 1),
+                                        BfOp(BfOpKind::DEC_PTR, 0),
+                                        BfOp(BfOpKind::INC_DATA, 1),
+                                        BfOp(BfOpKind::INC_PTR, 1),
+                                        BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
+                            {false, true, false, true, false, false}) &&
+            ops[ops.size() - 2].argument == ops[ops.size() - 4].argument) {
+        s64 offset = -ops[ops.size() - 2].argument;
+        for (size_t i = 0; i < 6; i++) {
+            ops.pop_back();
+        }
+        ops.emplace_back(BfOpKind::LOOP_MOVE_DATA, offset);
+    }
 
 
-      // [->+<]
-      if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 0),
-                                          BfOp(BfOpKind::DEC_DATA, 1),
-                                          BfOp(BfOpKind::INC_PTR, 0),
-                                          BfOp(BfOpKind::INC_DATA, 1),
-                                          BfOp(BfOpKind::DEC_PTR, 1),
-                                          BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
-                              {false, true, false, true, false, false}) &&
-              ops[ops.size() - 2].argument == ops[ops.size() - 4].argument) {
-          s64 offset = ops[ops.size() - 2].argument;
-          for (size_t i = 0; i < 6; i++) {
-              ops.pop_back();
-          }
-          ops.emplace_back(BfOpKind::LOOP_MOVE_DATA, offset);
-      }
+    // [->+<]
+    if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 0),
+                                        BfOp(BfOpKind::DEC_DATA, 1),
+                                        BfOp(BfOpKind::INC_PTR, 0),
+                                        BfOp(BfOpKind::INC_DATA, 1),
+                                        BfOp(BfOpKind::DEC_PTR, 1),
+                                        BfOp(BfOpKind::JUMP_IF_DATA_NOT_ZERO, 1)},
+                            {false, true, false, true, false, false}) &&
+            ops[ops.size() - 2].argument == ops[ops.size() - 4].argument) {
+        s64 offset = ops[ops.size() - 2].argument;
+        for (size_t i = 0; i < 6; i++) {
+            ops.pop_back();
+        }
+        ops.emplace_back(BfOpKind::LOOP_MOVE_DATA, offset);
+    }
 */
     // [-]
     if (matches(ops, {BfOp(BfOpKind::JUMP_IF_DATA_ZERO, 1),
